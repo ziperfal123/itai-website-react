@@ -3,7 +3,7 @@ import Button from '../Button';
 import SocialNetworkIcons from '../SocialNetworkIcons';
 import ItaiPassport from '../../assets/itai-passport.jpeg';
 
-const Hero = (props) => {
+const Hero = () => {
   console.log('Hero');
   return (
     <main className="hero">
@@ -11,9 +11,9 @@ const Hero = (props) => {
         <article>
           <div className="text">
             <h1 className="header">
-              {`hi!`}
+              hi!
               <span className="secondary-header">
-                {'i am Itai'}
+                i am Itai
                 .
               </span>
             </h1>

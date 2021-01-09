@@ -1,9 +1,8 @@
-
 const routes = [
   {
     path: './',
-    component: () => <h1>Hello world</h1>
+    component: () => <h1>Hello world</h1>,
   },
-]
+];
 
-export default routes
+export default routes;
