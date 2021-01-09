@@ -1,10 +1,11 @@
+@import "../../styles/variables.css";
 /*********************
         Button
 **********************/
 /*-----------------
       Variables
 ------------------*/
-.ant-btn.button {
+.button {
   /* Colors */
   --btn-primary-color: var(--color-primary-1);
   --btn-secondary-color: red;

@@ -1,14 +1,13 @@
 import React from 'react';
-import { withTrans } from '../../i18n/withTrans';
 import SectionTitle from '../SectionTitle';
 import PhotosComposition from '../PhotosComposition';
 
-const AboutSection = ({ t }) => {
+const AboutSection = () => {
   console.log('AboutSection');
 
   return (
     <div className="about-section">
-      <SectionTitle>{t('about title')}</SectionTitle>
+      <SectionTitle>about title</SectionTitle>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur consequuntur cum,
         cupiditate inventore iusto maxime molestiae omnis qui, quia, quis quisquam quo quod rerum
@@ -20,4 +19,4 @@ const AboutSection = ({ t }) => {
   );
 };
 
-export default withTrans(AboutSection);
+export default AboutSection;

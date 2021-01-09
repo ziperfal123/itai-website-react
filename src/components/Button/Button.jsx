@@ -1,8 +1,8 @@
 import React from 'react';
 import { Button as AntButton } from 'antd';
 import classnames from 'classnames';
-import PropTypes from 'prop-types';
 
+// eslint-disable-next-line react/prop-types
 const Button = ({ children, styleType }) => {
   const classNames = classnames('button', styleType);
 
@@ -14,12 +14,3 @@ const Button = ({ children, styleType }) => {
 };
 
 export default Button;
-
-Button.propTypes = {
-  children: PropTypes.string.isRequired,
-  styleType: PropTypes.string,
-};
-
-Button.defaultProps = {
-  styleType: 'primary',
-};

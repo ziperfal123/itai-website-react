@@ -5,6 +5,7 @@ import dataArr from './links';
 const SocialNetworkIcons = () => {
   const renderListItem = (itemObj) => (
     <li key={itemObj.id}>
+      {/* eslint-disable-next-line react/jsx-no-target-blank */}
       <a className={classnames('social-link', itemObj.name)} href={itemObj.url} target="_blank">
         {itemObj.icon}
       </a>
