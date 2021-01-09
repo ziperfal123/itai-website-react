@@ -1,0 +1,15 @@
+/*************************
+   Common Trips section
+**************************/
+
+/*---------------------
+        Variables
+-----------------------*/
+.common-trips-section {
+}
+
+.common-trips-section {
+  background-color: var(--color-primary-1);
+  width: var(--page-section-width);
+  height: 100vh;
+}

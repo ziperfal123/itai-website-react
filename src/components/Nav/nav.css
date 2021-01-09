@@ -1,0 +1,191 @@
+/*********************
+      Navigation
+**********************/
+.navigation {
+  position: absolute;
+  top: calc(var(--default-space) * 3);
+  left: 44%;
+  z-index: 10;
+}
+
+/*---------------------
+         List
+----------------------*/
+.navigation > ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+
+/*---------------------
+      List Items
+----------------------*/
+.navigation > ul > a.link {
+  color: var(--text-color-dark-1);
+  text-decoration: none;
+  font-size: var(--font-size-pica-C);
+  text-transform: capitalize;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: box-shadow 0.15s linear, color 0.15s linear;
+  padding: 2px 5px;
+}
+
+.navigation > ul > a.link:not(:first-of-type) {
+  margin-left: 24px;
+}
+
+.navigation > ul > a.link::first-letter {
+  text-transform: capitalize;
+}
+
+/* States */
+/*-- Hover --*/
+.navigation > ul > a.link:hover {
+  color: var(--color-primary-1);
+  box-shadow: 0 2px var(--color-primary-dark-2);
+}
+
+/*-- Active, Focus, Selection --*/
+.navigation > ul > .link:active,
+.navigation > ul > .link:focus,
+.navigation > ul > .link::selection {
+  color: var(--font-size-great-primer-C);
+}
+
+/*---------------------
+        Flags
+----------------------*/
+.navigation > ul > .flag {
+  height: 25px;
+  cursor: pointer;
+}
+
+.navigation > ul > .flag:first-of-type {
+  margin-left: 20px;
+  margin-right: 15px;
+}
+
+.navigation > ul > .flag:hover {
+  box-shadow: var(--box-shadow);
+}
+
+/**************************
+    React-Burger styles
+***************************/
+/* Position and sizing of burger button */
+.bm-burger-button {
+  display: none;
+  position: fixed;
+  width: 26px;
+  height: 20px;
+  right: 36px;
+  top: 36px;
+}
+
+/* States */
+/*-- Hover --*/
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #373a47;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: var(--heading-color-dark-2);
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: var(--color-primary-dark-1);
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: var(--font-size-great-primer-C);
+  color: var(--text-color-light);
+}
+
+.bm-item:first-letter {
+  text-transform: uppercase;
+}
+
+.bm-item:hover {
+  color: var(--color-primary-1);
+}
+
+/*---------------------
+        Flags
+----------------------*/
+.bm-item-list > .bm-item.flag {
+  height: 25px;
+  cursor: pointer;
+  display: inline !important;
+}
+
+.bm-item-list > .bm-item.flag:first-of-type {
+  margin-right: 20px;
+}
+/* States */
+/*-- Hover --*/
+.bm-item-list > .bm-item.flag:hover {
+  box-shadow: var(--box-shadow);
+}
+/*-- Focus --*/
+.bm-item-list > .bm-item.flag:focus {
+  outline: none;
+}
+
+/* Styling of overlay */
+.bm-item-list > .bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/*---------------------
+    Media queries
+----------------------*/
+/* Tablet portrait upper boundry or less */
+@media screen and (max-width: 950px) {
+  .navigation {
+    display: none;
+  }
+  .bm-burger-button {
+    display: block;
+  }
+}

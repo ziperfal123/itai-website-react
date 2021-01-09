@@ -1,0 +1,66 @@
+/**************************
+    Contact Form
+***************************/
+
+/*********************
+      Variables
+**********************/
+.contact-form {
+  --section-height: 80vh;
+}
+
+.contact-form {
+  background-color: #fff;
+  position: relative;
+  top: 5%;
+  height: 70%;
+  min-height: 350px;
+  border-radius: var(--border-radius);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+/*---------------------
+        Header
+-----------------------*/
+.contact-form > .header {
+  color: var(--color-primary-1);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+/*---------------------
+        Input
+-----------------------*/
+.contact-form > .ant-input {
+  width: 95%;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
+}
+/* Placeholder */
+.contact-form > .ant-input::placeholder {
+  font-size: 17px;
+  text-transform: capitalize;
+}
+
+/* States */
+.contact-form > .ant-input:hover,
+.contact-form > .ant-input:active,
+.contact-form > .ant-input:focus,
+.contact-form > .ant-input::selection {
+  box-shadow: none;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
+}
+
+/*---------------------
+        Button
+-----------------------*/
+.contact-form > .ant-btn.button.primary {
+  align-self: center;
+  width: 50%;
+}

@@ -1,0 +1,56 @@
+/*********************
+   About me section
+**********************/
+
+/*---------------------
+       Variables
+----------------------*/
+.about-section {
+  --paragraph-width: 75%;
+  --paragraph-max-width: 900px;
+}
+
+.about-section {
+  position: relative;
+  background-color: #fff;
+  width: var(--page-section-width);
+  min-height: 100vh;
+}
+
+/*-----------------------
+        Paragraph
+------------------------*/
+.about-section > p {
+  margin: auto;
+  width: var(--paragraph-width);
+  max-width: var(--paragraph-max-width);
+  font-size: var(--font-size-pica-C);
+}
+
+/*-------------------------
+        Media queries
+---------------------------*
+//* Tablet portrait upper boundry or less */
+@media screen and (max-width: 950px) {
+  /* About section */
+  .about-section {
+    text-align: center;
+  }
+
+  /* Paragraph */
+  .about-section > p {
+    font-size: var(--font-size-pica-B);
+  }
+}
+
+/* mobile device upper boundry or less */
+@media screen and (max-width: 600px) {
+  .about-section {
+    height: 90vh;
+  }
+  /* Paragraph */
+  .about-section > p {
+    font-size: var(--font-size-pica-A);
+    text-align: center;
+  }
+}

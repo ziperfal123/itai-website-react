@@ -1,0 +1,115 @@
+/*********************
+    Section title
+**********************/
+/*---------------------
+       Variables
+----------------------*/
+.service-card {
+  /* Icon */
+  --icon-size: 100px;
+  --icon-size-mobile: calc(var(--icon-size) - 20px);
+  --icon-bottom-space: calc(var(--default-space) * 1.5);
+
+  /* Title */
+  --title-bottom-space: calc(var(--default-space));
+  --title-letter-spacing: 2px;
+}
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 250px;
+}
+
+/*------------------
+        Icon
+--------------------*/
+.service-card > svg {
+  width: var(--icon-size);
+  height: var(--icon-size);
+  margin-bottom: var(--icon-bottom-space);
+  fill: var(--text-color-light);
+}
+
+.service-card > svg.camel {
+  margin-bottom: 0px;
+}
+
+/*------------------
+        Title
+--------------------*/
+.service-card > .title {
+  color: var(--text-color-light);
+  font-size: var(--font-size-great-primer-C);
+  text-align: center;
+  letter-spacing: var(--title-letter-spacing);
+  margin-bottom: var(--title-bottom-space);
+}
+
+.service-card > .title:first-letter {
+  text-transform: uppercase;
+}
+
+/* Title after camel icon (a fix due to inner padding of the icon) */
+.service-card > svg.camel + .title {
+  position: relative;
+  top: 5px;
+}
+
+/*------------------
+         Text
+--------------------*/
+.service-card > .text {
+  color: var(--text-color-light);
+  font-size: var(--font-size-pica-C);
+  text-align: center;
+}
+
+/* Text after camel icon (a fix due to inner padding of the icon) */
+.service-card > svg.camel ~ .text {
+  position: relative;
+  top: 5px;
+}
+
+/*---------------------
+    Media queries
+----------------------*/
+/* Tablet portrait upper boundry or less */
+@media screen and (max-width: 950px) {
+  /* Title */
+  .service-card > .title {
+    font-size: var(--font-size-great-primer-B);
+  }
+
+  /* Text */
+  .service-card > .text {
+    font-size: var(--font-size-pica-B);
+  }
+}
+
+/* mobile device upper boundry or less */
+@media screen and (max-width: 600px) {
+  .service-card:nth-last-child(1),
+  .service-card:nth-last-child(2) {
+    display: none;
+  }
+  /* Icon */
+  .service-card > svg {
+    width: var(--icon-size-mobile);
+    height: var(--icon-size-mobile);
+    margin-bottom: var(--icon-bottom-space);
+    fill: var(--text-color-light);
+  }
+
+  /* Title */
+  .service-card > .title {
+    font-size: var(--font-size-great-primer-A);
+  }
+
+  /* Text */
+  .service-card > .text {
+    font-size: var(--font-size-pica-A);
+  }
+}

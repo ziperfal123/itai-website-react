@@ -1,0 +1,51 @@
+/************************
+  Social network Icons
+************************/
+ul.social-network-icons {
+  --list-items-margin-right: calc(var(--default-space) * 2);
+  --list-items-size: 32px;
+  --facebook-icon-color: #1877f2;
+  --linkedin-icon-color: #007bb5;
+  --twitter-icon-color: #1da1f2;
+}
+
+ul.social-network-icons {
+  margin-top: 2rem;
+  width: 45%;
+  display: flex;
+  list-style-type: none;
+}
+
+/*---------------------
+         Icon
+----------------------*/
+ul.social-network-icons > li > .social-link {
+  font-size: var(--list-items-size);
+  color: #333;
+  margin-right: var(--list-items-margin-right);
+  display: inline-block;
+  transition: transform 0.4s;
+}
+/* States */
+/*-- Hover --*/
+ul.social-network-icons > li > .social-link:hover {
+  transform: translateY(-2px);
+}
+
+/*---------------------
+       Icon types
+----------------------*/
+/* States */
+/*-- Hover --*/
+/*-- Facebook --*/
+ul.social-network-icons > li > .social-link.facebook:hover {
+  color: #1877f2;
+}
+/*-- linkedin --*/
+ul.social-network-icons > li > .social-link.linkedin:hover {
+  color: #007bb5;
+}
+/*-- twitter --*/
+ul.social-network-icons > li > .social-link.twitter:hover {
+  color: #1da1f2;
+}

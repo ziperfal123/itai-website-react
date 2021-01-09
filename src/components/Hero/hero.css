@@ -1,0 +1,139 @@
+/*********************
+        Hero
+**********************/
+
+/*********************
+      Variables
+**********************/
+.hero {
+  --main-header-font-size-large: 8rem;
+  --main-header-font-size-medium: calc(
+    var(--main-header-font-size-large) - 10px
+  );
+  --main-header-font-size-small: calc(
+    var(--main-header-font-size-large) - 20px
+  );
+
+  --sub-header-font-size-large: 4.5rem;
+  --sub-header-font-size-medium: calc(var(--sub-header-font-size-large) - 5px);
+  --sub-header-font-size-small: calc(var(--sub-header-font-size-large) - 10px);
+
+  --trinary-header-font-size-large: var(--font-size-great-primer-C);
+  --trinary-header-font-size-medium: calc(
+    var(--trinary-header-font-size-large) - 2px
+  );
+  --trinary-header-font-size-small: calc(
+    var(--trinary-header-font-size-large) - 2px
+  );
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  background-color: var(--color-primary-3);
+  width: var(--page-section-width);
+  height: var(--page-section-height);
+}
+
+/*---------------------
+    Personal details
+----------------------*/
+.hero > .personal-details {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+
+/* content container  */
+.hero > .personal-details > article {
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+  left: 10%;
+}
+
+/*-- Main header --*/
+.hero > .personal-details > article > .text > .header {
+  margin: 0;
+  line-height: 1;
+  font-size: var(--main-header-font-size-large);
+}
+
+.hero > .personal-details > article > .text > .header::first-letter {
+  text-transform: capitalize;
+}
+
+/*-- Secondary header --*/
+.hero > .personal-details > article > .text > .header > .secondary-header {
+  margin-left: 5px;
+  font-size: var(--sub-header-font-size-large);
+}
+
+/*-- Trinary header --*/
+.hero > .personal-details > article > .text > .trinary-header {
+  font-weight: 100;
+  font-size: var(--trinary-header-font-size-large);
+  margin-top: 0;
+  margin-bottom: 3rem;
+}
+
+/*---------------------
+    Passport image
+----------------------*/
+.hero > .passport-image {
+  position: absolute;
+  top: 50%;
+  left: 46%;
+  transform: translate(-50%, -50%);
+  height: 370px;
+  border-radius: 50%;
+}
+
+/*---------------------
+    Background image
+----------------------*/
+.hero > .background-image {
+  width: 50%;
+  height: 100%;
+  background-image: url(../../../assets/israel-background-color.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+/*---------------------
+    Media queries
+----------------------*/
+/* Tablet landscape upper boundry or less */
+@media screen and (max-width: 1200px) {
+  .hero > .personal-details > article > .text > .header {
+    font-size: var(--main-header-font-size-medium);
+  }
+  .hero > .personal-details > article > .text > .header > .secondary-header {
+    font-size: var(--sub-header-font-size-medium);
+  }
+  .hero > .personal-details > article > .text > .trinary-header {
+    font-size: var(--trinary-header-font-size-medium);
+  }
+  .hero > .passport-image {
+    height: 270px;
+    left: 50%;
+  }
+}
+
+/* Tablet portrait upper boundry or less */
+@media screen and (max-width: 950px) {
+  .hero > .personal-details > article > .text > .header {
+    font-size: var(--main-header-font-size-small);
+  }
+  .hero > .personal-details > article > .text > .header > .secondary-header {
+    font-size: var(--sub-header-font-size-small);
+  }
+  .hero > .personal-details > article > .text > .trinary-header {
+    font-size: var(--trinary-header-font-size-small);
+  }
+
+  .hero > .passport-image {
+    display: none;
+  }
+}

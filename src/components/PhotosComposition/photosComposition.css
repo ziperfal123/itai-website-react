@@ -1,0 +1,114 @@
+/*********************
+    Section title
+**********************/
+
+/*---------------------
+       Variables
+----------------------*/
+.photos-composition {
+  --container-height: 45rem;
+  --container-max-width: 96rem;
+  --image-scale: 0.95;
+}
+
+.photos-composition {
+  position: relative;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 40px;
+  height: var(--container-height);
+  width: 70%;
+  max-width: var(--container-max-width);
+}
+
+/*---------------------
+   Photos Composition
+----------------------*/
+/* Photo */
+.photos-composition > .photo {
+  z-index: 1;
+  position: absolute;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  height: 90%;
+  width: 66rem;
+  transition: transform 0.2s linear, filter 0.2s linear;
+}
+
+/* Using ".hovered" class instead of ":hover" pseudo-selector is done on purpose */
+/*-- States --*/
+/*-- Hover --*/
+.photos-composition > .photo.hovered {
+  filter: brightness(100%) blur(0);
+  z-index: 10;
+}
+
+.photos-composition > .photo:not(.hovered) {
+  filter: brightness(30%) blur(1px);
+  transform: scale(var(--image-scale));
+}
+
+/* Each Photo */
+/*-- Photo 1 --*/
+.photos-composition > .photo.photo-1 {
+  top: 0;
+  left: -4rem;
+}
+/*-- Photo 2 --*/
+.photos-composition > .photo.photo-2 {
+  top: 4rem;
+  right: -4rem;
+}
+/*-- Photo 3 --*/
+.photos-composition > .photo.photo-3 {
+  top: 8rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/*---------------------
+     Media queries
+----------------------*/
+/* large screen */
+@media screen and (max-width: 1200px) {
+  .photos-composition > .photo {
+    height: 75%;
+    width: 54rem;
+  }
+
+  /*-- Photo 1 --*/
+  .photos-composition > .photo.photo-1 {
+    left: -2.5rem;
+  }
+  /*-- Photo 2 --*/
+  .photos-composition > .photo.photo-2 {
+    right: -2.5rem;
+  }
+  /*-- Photo 3 --*/
+  .photos-composition > .photo.photo-3 {
+    top: 8rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .photos-composition > .photo:not(.photo-3) {
+    display: none;
+  }
+
+  .photos-composition > .photo {
+    transform: translateX(0);
+    width: 100%;
+    max-width: 620px;
+    top: 0 !important;
+    left: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .photos-composition > .photo {
+    max-width: 400px;
+    max-height: 300px;
+  }
+}

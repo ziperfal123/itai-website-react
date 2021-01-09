@@ -1,0 +1,15 @@
+/*************************
+        Carousel
+**************************/
+
+/*---------------------
+        Variables
+-----------------------*/
+.carousel {
+}
+
+.carousel {
+  background-color: var(--color-primary-1);
+  width: var(--page-section-width);
+  height: 100vh;
+}

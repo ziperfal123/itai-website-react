@@ -1,0 +1,53 @@
+/*********************
+    Section title
+**********************/
+/*---------------------
+       Variables
+----------------------*/
+.section-title {
+  --title-top-space: calc(var(--default-space) * 6);
+  --title-bottom-space: calc(var(--default-space) * 3);
+}
+
+.section-title {
+  text-align: center;
+  padding-top: var(--title-top-space);
+  margin-bottom: var(--title-bottom-space);
+  font-weight: lighter;
+  font-size: var(--font-size-trafalgar-C);
+  letter-spacing: 3px;
+}
+
+.section-title::first-letter {
+  text-transform: capitalize;
+}
+
+/*---------------------
+         Types
+----------------------*/
+/* Dark */
+.section-title.dark {
+  color: var(--heading-color-dark-1);
+}
+
+/* Light */
+.section-title.light {
+  color: var(--heading-color-light-1);
+}
+
+/*------------------------
+      Media queries
+------------------------*/
+/* Tablet portrait upper boundry or less */
+@media screen and (max-width: 950px) {
+  .section-title {
+    font-size: var(--font-size-trafalgar-B);
+  }
+}
+
+/* mobile device upper boundry or less */
+@media screen and (max-width: 600px) {
+  .section-title {
+    font-size: var(--font-size-trafalgar-A);
+  }
+}

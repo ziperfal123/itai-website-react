@@ -1,0 +1,46 @@
+/**************************
+   Social network header
+***************************/
+
+/*********************
+      Variables
+**********************/
+.social-network-header {
+  --header-width: 25rem;
+  --header-width-mobile: 35rem;
+  --header-top: 6rem;
+  --header-top-mobile: 4rem;
+  --header-left: 30px;
+
+  --margin-bottom-mobile: 20px;
+}
+
+.social-network-header {
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
+  top: var(--header-top);
+  left: var(--header-left);
+  width: var(--header-width);
+}
+
+.social-network-header svg {
+  cursor: pointer;
+}
+.social-network-header svg * {
+  fill: white;
+}
+
+/*--------------------
+    Media queries
+----------------------*
+//* Tablet portrait upper boundry or less */
+/* mobile device upper boundry or less */
+@media screen and (max-width: 600px) {
+  .social-network-header {
+    top: var(--header-top-mobile);
+    left: 50%;
+    transform: translateX(-50%);
+    width: var(--header-width-mobile);
+  }
+}

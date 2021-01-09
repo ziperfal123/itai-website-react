@@ -1,0 +1,166 @@
+/*********************
+   Reviews section
+**********************/
+
+/*********************
+      Variables
+**********************/
+.reviews-section {
+  /* Reviews */
+  --section-min-height: 30vh;
+
+  /* Review */
+  --review-width: 50rem;
+  --review-min-width: 400px;
+  --review-max-width: 40%;
+  --review-max-width-tablet: 50%;
+  --review-max-width-mobile: 80%;
+  --review-vertical-margin: 2rem;
+
+  /* Passport image */
+  --passport-image-size: 9rem;
+  --passport-image-size-tablet: 9rem;
+  --passport-image-size-mobile: 8rem;
+  --passport-image-horizontal-margin: 3rem;
+  --passport-image-margin: 0px var(--passport-image-horizontal-margin);
+  --passport-image-border-radius: 50%;
+
+  /*-- Tablet --*/
+  --passport-image-vertical-margin-tablet: 1.5rem;
+
+  /* Text */
+  --name-vertical-margin: 1rem;
+  --text-max-width: calc(
+    100% - var(--passport-image-size) - var(--passport-image-horizontal-margin) *
+      3
+  );
+}
+
+.reviews-section {
+  background-color: var(--grey);
+  min-height: var(--section-min-height);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/*---------------------
+        Review
+-----------------------*/
+.reviews-section > .review {
+  margin: var(--review-vertical-margin) 0;
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  width: var(--review-width);
+  min-width: var(--review-min-width);
+  max-width: var(--review-max-width);
+  height: 50%;
+}
+
+/* Passport image */
+.reviews-section > .review > img {
+  width: var(--passport-image-size);
+  height: var(--passport-image-size);
+  margin: var(--passport-image-margin);
+  border-radius: var(--passport-image-border-radius);
+}
+
+/* Text */
+.reviews-section > .review > .text {
+  height: 100%;
+  max-width: var(--text-max-width);
+}
+
+/*-- Paragraph --*/
+.reviews-section > .review > .text > p {
+  color: var(--text-color-dark-2);
+  font-size: var(--font-size-pica-C);
+  font-style: italic;
+}
+
+/*-- Sub header --*/
+.reviews-section > .review > .text > h3 {
+  color: hsl(191, 100%, 40%);
+  margin: var(--name-vertical-margin);
+  font-weight: bold;
+  font-size: var(--font-size-great-primer-C);
+}
+
+/*-----------------------------
+    Media queries Templates
+-----------------------------*
+//* Tablet portrait upper boundry or less */
+@media screen and (max-width: 950px) {
+  /* Reviews */
+  .reviews-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  /* Review */
+  .reviews-section > .review {
+    margin-top: 30px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: var(--review-max-width-tablet);
+    width: 60%;
+    height: 100%;
+  }
+
+  /* Passport image */
+  .reviews-section > .review > img {
+    width: var(--passport-image-size-tablet);
+    height: var(--passport-image-size-tablet);
+    margin: var(--passport-image-vertical-margin-tablet)
+      var(--passport-image-horizontal-margin);
+    border-radius: var(--passport-image-border-radius);
+  }
+
+  /* Text */
+  .reviews-section > .review > .text {
+    height: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  /*-- Paragraph --*/
+  .reviews-section > .review > .text > p {
+    font-size: var(--font-size-pica-B);
+    margin-bottom: 0;
+  }
+
+  /*-- Sub header --*/
+  .reviews-section > .review > .text > h3 {
+    font-size: var(--font-size-great-primer-B);
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/* mobile device upper boundry or less */
+@media screen and (max-width: 600px) {
+  /* Review */
+  .reviews-section > .review {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: var(--review-max-width-mobile);
+    height: 100%;
+  }
+
+  /*-- Paragraph --*/
+  .reviews-section > .review > .text > p {
+    font-size: var(--font-size-pica-A);
+  }
+
+  /*-- Sub header --*/
+  .reviews-section > .review > .text > h3 {
+    font-size: var(--font-size-great-primer-A);
+  }
+}

@@ -1,0 +1,45 @@
+/*********************
+   Services section
+**********************/
+
+/*---------------------
+        Variables
+-----------------------*/
+.services-section {
+  --section-padding-bottom: 100px;
+  --title-margin-bottom: calc(var(--default-space) * 5);
+}
+
+.services-section {
+  background-color: var(--color-primary-1);
+  width: var(--page-section-width);
+  padding-bottom: var(--section-padding-bottom);
+}
+
+.services-section > .title {
+  margin-bottom: var(--title-margin-bottom);
+}
+
+/*---------------------
+   services container
+-----------------------*/
+.services-section > .services-container {
+  display: grid;
+  place-items: center;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 70px;
+  grid-column-gap: 60px;
+  width: 85vw;
+  margin: 0 auto;
+}
+
+/*---------------------
+    Media queries
+----------------------*/
+/* Tablet portrait upper boundry or less */
+@media screen and (max-width: 950px) {
+  .services-section > .services-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
