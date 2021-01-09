@@ -28,6 +28,7 @@
   font-size: 4.4rem;
   cursor: pointer;
 }
+
 .social-network-header svg:not(:hover) * {
   fill: white;
 }
