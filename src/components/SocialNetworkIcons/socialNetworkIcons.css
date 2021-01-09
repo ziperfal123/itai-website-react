@@ -3,7 +3,7 @@
 ************************/
 ul.social-network-icons {
   --list-items-margin-right: calc(var(--default-space) * 2);
-  --list-items-size: 32px;
+  --list-items-size: 3.2rem;
   --facebook-icon-color: #1877f2;
   --linkedin-icon-color: #007bb5;
   --twitter-icon-color: #1da1f2;

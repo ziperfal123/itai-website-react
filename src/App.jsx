@@ -4,6 +4,7 @@ import HeroSection from './components/Hero';
 import AboutSection from './components/AboutSection';
 import ServicesSection from './components/ServicesSection';
 import ReviewsSection from './components/ReviewsSection';
+import ContactSection from './components/ContactSection';
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
       <AboutSection />
       {/* <CommonTripsSection /> */}
       <ReviewsSection />
-      {/* <ContactSection /> */}
+      <ContactSection />
     </div>
   );
 }

@@ -2,7 +2,6 @@ import React from 'react';
 import { FiPhone } from 'react-icons/fi';
 import { FaMapPin } from 'react-icons/fa';
 import { AiOutlineMail } from 'react-icons/ai';
-import { withTrans } from '../../i18n/withTrans';
 import SocialNetworkHeader from '../SocialNetworkHeader';
 import ContactForm from '../contactForm';
 
@@ -49,4 +48,4 @@ const ContactSection = () => {
   );
 };
 
-export default withTrans(ContactSection);
+export default ContactSection;

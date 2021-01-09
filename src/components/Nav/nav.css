@@ -35,7 +35,7 @@
 }
 
 .navigation > ul > a.link:not(:first-of-type) {
-  margin-left: 24px;
+  margin-left: 2.4rem;
 }
 
 .navigation > ul > a.link::first-letter {
