@@ -1,3 +1,5 @@
+@import '../../styles/variables.css';
+
 /*********************
       Navigation
 **********************/
@@ -29,6 +31,7 @@
   letter-spacing: 1px;
   transition: box-shadow 0.15s linear, color 0.15s linear;
   padding: 2px 5px;
+  width: max-content;
 }
 
 .navigation > ul > a.link:not(:first-of-type) {

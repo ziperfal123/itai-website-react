@@ -11,7 +11,7 @@
 
 .contact-section {
   position: relative;
-  background-image: url(../../../assets/jerusalem-cover.png);
+  background-image: url(../../assets/jerusalem-cover.png);
   background-size: cover;
   height: var(--section-height);
   display: flex;

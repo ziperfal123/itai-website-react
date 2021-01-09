@@ -1,7 +1,7 @@
 import React from 'react';
 import { withTrans } from '../../i18n/withTrans';
-import ManPassport from '../../../assets/man-passport.jpg';
-import WomanPassport from '../../../assets/woman-passport.jpg';
+import ManPassport from '../../assets/man-passport.jpg';
+import WomanPassport from '../../assets/woman-passport.jpg';
 
 const ReviewsSection = ({ t }) => {
   const reviews = [

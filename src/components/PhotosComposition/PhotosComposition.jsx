@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import classnames from 'classnames';
-import Itai1 from '../../../assets/itai-people-1.jpg';
-import Itai2 from '../../../assets/itai-people-2.jpg';
-import Itai3 from '../../../assets/itai-people-3.jpg';
+import Itai1 from '../../assets/itai-people-1.jpg';
+import Itai2 from '../../assets/itai-people-2.jpg';
+import Itai3 from '../../assets/itai-people-3.jpg';
 
 const IMAGES = {
   center: '3',

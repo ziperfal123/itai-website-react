@@ -1,12 +1,9 @@
 import React from 'react';
 import Button from '../Button';
 import SocialNetworkIcons from '../SocialNetworkIcons';
-import ItaiPassport from '../../../assets/itai-passport.jpeg';
-import { withTrans } from '../../i18n/withTrans';
+import ItaiPassport from '../../assets/itai-passport.jpeg';
 
 const Hero = (props) => {
-  // eslint-disable-next-line react/prop-types
-  const { t } = props;
   console.log('Hero');
   return (
     <main className="hero">
@@ -14,10 +11,9 @@ const Hero = (props) => {
         <article>
           <div className="text">
             <h1 className="header">
-              {`${t('hi')}!`}
+              {`hi!`}
               <span className="secondary-header">
-                {' '}
-                {t('i am itai')}
+                {'i am Itai'}
                 .
               </span>
             </h1>
@@ -37,4 +33,4 @@ const Hero = (props) => {
   );
 };
 
-export default withTrans(Hero);
+export default Hero;

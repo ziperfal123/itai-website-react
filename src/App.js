@@ -1,20 +1,22 @@
+import React from 'react'
+import {BrowserRouter} from 'react-router-dom'
+import Nav from "./components/Nav"
+import HeroSection from './components/Hero'
+import routes from './routes'
+
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className={'root'}>
+    <BrowserRouter>
+      <Nav />
+      <HeroSection />
+      {/*<Switch>*/}
+      {/*  {routes.map(route => (*/}
+      {/*      <Link to={'/'}>Bus</Link>*/}
+      {/*  ))}*/}
+      {/*</Switch>*/}
+    </BrowserRouter>
+      </div>
   );
 }
 

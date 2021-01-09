@@ -1,0 +1,137 @@
+/*********************
+      Variables
+**********************/
+:root {
+    /*--------------------
+      Color plate
+  ----------------------*/
+    --color-primary-1: hsl(191, 87%, 50%);
+    --color-primary-2: hsl(190, 77%, 60%);
+    --color-primary-3: hsl(190, 100%, 88%);
+    --grey: hsl(240, 3%, 93%);
+
+    /* Dark */
+    --color-primary-dark-1: hsl(229, 13%, 25%);
+    --color-primary-dark-2: hsl(194, 87%, 40%);
+
+    /* Heading colors */
+    /* -- Dark -- */
+    --heading-color-dark-1: hsl(0, 0%, 20%);
+    --heading-color-dark-2: hsl(220, 60%, 20%);
+
+    /* -- Light -- */
+    --heading-color-light-1: hsl(0, 0%, 100%);
+
+    /* Text colors */
+    /* -- Dark -- */
+    --text-color-dark-1: hsl(0, 0%, 20%);
+    --text-color-dark-2: hsl(211, 47%, 29%);
+
+    /* -- Light -- */
+    --text-color-light: hsl(0, 0%, 100%);
+
+    /*--------------------
+        Typography
+  ----------------------*/
+    /* Group A- Default sizing 0-599 pxs (typically smart phones) */
+    /* Group B- 600 pixels and above (typically tablet devices) */
+    /* Group C- 600 pixels and above when touch is not available (typically desktop or laptop screens) */
+
+    /* Hero or blog post titles */
+    --font-size-canon-A: 3.2rem;
+    --font-size-canon-B: 5.2rem;
+    --font-size-canon-C: 4.4rem;
+
+    /* Article title or section header */
+    --font-size-trafalgar-A: 2.4rem;
+    --font-size-trafalgar-B: 3.6rem;
+    --font-size-trafalgar-C: 3.2rem;
+
+    /* Primary headline on indexes */
+    --font-size-paragon-A: 2.2rem;
+    --font-size-paragon-B: 2.8rem;
+    --font-size-paragon-C: 2.8rem;
+
+    /* Sub header */
+    --font-size-double-pica-A: 2rem;
+    --font-size-double-pica-B: 2.6rem;
+    --font-size-double-pica-C: 2.4rem;
+
+    /* Headline title or subtitle */
+    --font-size-great-primer-A: 1.8rem;
+    --font-size-great-primer-B: 2.1rem;
+    --font-size-great-primer-C: 2rem;
+
+    /* Article body, Index links, titles & headlines */
+    --font-size-pica-A: 1.6rem;
+    --font-size-pica-B: 1.8rem;
+    --font-size-pica-C: 1.6rem;
+
+    /* Small header capitals */
+    --font-size-minion-A: 1.2rem;
+    --font-size-minion-B: 1.3rem;
+    --font-size-minion-C: 1.3rem;
+
+    /*--------------------
+       Sizes & Spaces
+  ----------------------*/
+    --default-space: 1rem;
+    --page-section-width: 100%;
+    --page-section-height: 100vh;
+
+    /*--------------------
+         Borders
+  ----------------------*/
+    --border-radius: 5px;
+
+    /*--------------------
+       Box shadow
+  ----------------------*/
+    --box-shadow: 0 1px 6px hsl(0, 0%, 20%);
+
+    /*--------------------
+      Media queries
+  ----------------------*/
+    --desktop-upper-boundry: 1800px;
+    --tablet-landscape-upper-boundry: 1200px;
+    --tablet-portrait-upper-boundry: 900px;
+    --iphone-upper-boundry: 600px;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: "-apple-system";
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+/*-----------------------------
+    Media queries Templates
+-----------------------------*
+//* Tablet portrait upper boundry or less */
+@media screen and (max-width: 950px) {
+}
+
+/* mobile device upper boundry or less */
+@media screen and (max-width: 600px) {
+}
