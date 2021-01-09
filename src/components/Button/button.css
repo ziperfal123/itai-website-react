@@ -2,31 +2,16 @@
 /*********************
         Button
 **********************/
-/*-----------------
-      Variables
-------------------*/
-.button {
-  /* Colors */
-  --btn-primary-color: var(--color-primary-1);
-  --btn-secondary-color: red;
-
-  /* Sizes */
-  --btn-default-height: 30px;
-  --btn-min-width: 80px;
-  --btn-letter-spacing: 3px;
-  --btn-padding: calc(var(--default-space) * 2) var(--default-space);
-}
-
 .ant-btn.button {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: var(--btn-min-width);
-  height: var(--btn-default-height);
+  min-width: 8rem;
+  height: 3rem;
   border: none;
   text-transform: uppercase;
   border-radius: var(--border-radius);
-  padding: var(--btn-padding);
+  padding: calc(var(--default-space) * 2) var(--default-space);
   cursor: pointer;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
   transition: transform 0.2s linear, background-color 0.1s linear,
@@ -58,15 +43,15 @@
 /* Primary */
 .ant-btn.button.primary {
   color: var(--text-color-light);
-  background: var(--btn-primary-color);
-  letter-spacing: var(--btn-letter-spacing);
+  background: var(--color-primary-1);
+  letter-spacing: 0.3rem
 }
 
 /* States */
 /*-- Focus, Active  --*/
 .ant-btn.button.primary:focus,
 .ant-btn.button.primary:active {
-  background: var(--btn-primary-color);
+  background: var(--color-primary-1);
 }
 
 /*-- Hover --*/

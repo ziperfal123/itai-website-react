@@ -3,7 +3,7 @@ import { Button as AntButton } from 'antd';
 import classnames from 'classnames';
 
 // eslint-disable-next-line react/prop-types
-const Button = ({ children, styleType }) => {
+const Button = ({ children, styleType = 'primary' }) => {
   const classNames = classnames('button', styleType);
 
   return (
