@@ -7,7 +7,6 @@
 -----------------------*/
 .services-section {
   --section-padding-bottom: 100px;
-  --title-margin-bottom: calc(var(--default-space) * 5);
 }
 
 .services-section {
@@ -17,7 +16,7 @@
 }
 
 .services-section > .title {
-  margin-bottom: var(--title-margin-bottom);
+  margin-bottom: calc(var(--default-space) * 5);
 }
 
 /*---------------------

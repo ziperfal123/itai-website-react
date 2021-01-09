@@ -1,19 +1,18 @@
 import React from 'react';
-import { withTrans } from '../../i18n/withTrans';
 import ManPassport from '../../assets/man-passport.jpg';
 import WomanPassport from '../../assets/woman-passport.jpg';
 
-const ReviewsSection = ({ t }) => {
+const ReviewsSection = () => {
   const reviews = [
     {
       image: ManPassport,
       name: 'Alejandro Reyes',
-      text: t('alejandro review text'),
+      text: 'alejandro review text',
     },
     {
       image: WomanPassport,
       name: 'Lisa Wix',
-      text: t('lisa review text'),
+      text: 'lisa review text',
     },
   ];
 
@@ -39,4 +38,4 @@ const ReviewsSection = ({ t }) => {
   );
 };
 
-export default withTrans(ReviewsSection);
+export default ReviewsSection;
