@@ -18,7 +18,6 @@ const Nav = () => {
   const changeLanguage = (selectedLanguage) => {
     i18n.changeLanguage(selectedLanguage);
   };
-  console.log('pathname: ', pathname);
 
   const isLinkActive = (clickedLink) => pathname === clickedLink;
 
