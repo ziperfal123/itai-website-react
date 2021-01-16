@@ -1,0 +1,15 @@
+@import '../../styles/variables.css';
+
+/*********************
+      About Page
+**********************/
+.page.about {
+    width: 100vw;
+    height: calc(100vh - 80px);
+    background: lightblue;
+}
+
+.header-space {
+    height: 80px;
+    width: 100%;
+}
