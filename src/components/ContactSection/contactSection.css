@@ -55,16 +55,10 @@
 /*/
 / detail's text //*/
 .contact-section > .details > .detail > .text > p {
-  letter-spacing: 0.4px;
+  letter-spacing: .4px;
   color: white;
   margin-bottom: 0;
   font-size: var(--font-size-minion-C);
-}
-
-/*-- Icon --*/
-.contact-section > .details > .detail .yaniv {
-  width: 100px;
-  fill: white;
 }
 
 /*--------------------
