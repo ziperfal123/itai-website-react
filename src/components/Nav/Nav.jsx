@@ -28,8 +28,14 @@ const Nav = () => {
         right
         width={280}
       >
-        <USAIcon className="flag" onClick={() => changeLanguage(LANGUAGES.english)} />
-        <SpainIcon className="flag" onClick={() => changeLanguage(LANGUAGES.spanish)} />
+        <USAIcon
+          className="flag"
+          onClick={() => changeLanguage(LANGUAGES.english)}
+        />
+        <SpainIcon
+          className="flag"
+          onClick={() => changeLanguage(LANGUAGES.spanish)}
+        />
         <NavLink
           to={routesPaths.home}
           className="link"
