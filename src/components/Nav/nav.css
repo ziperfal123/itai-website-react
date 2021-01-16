@@ -46,9 +46,12 @@
 /*-- Hover --*/
 .nav > .navigation > ul > a.link:hover {
   color: var(--color-primary-1);
-  box-shadow: 0 2px var(--color-primary-dark-2);
 }
 
+/*-- Active --*/
+.nav > .navigation > ul > a.link.active {
+  box-shadow: 0 2px var(--color-primary-dark-2);
+}
 /*-- Active, Focus, Selection --*/
 .nav > .navigation > ul > .link:active,
 .nav > .navigation > ul > .link:focus,

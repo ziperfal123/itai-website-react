@@ -6,6 +6,8 @@ import 'antd/dist/antd.css';
 import './i18n';
 
 ReactDOM.render(
-  <BrowserRouter><App /></BrowserRouter>,
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
   document.getElementById('root'),
 );
