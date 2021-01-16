@@ -1,9 +1,11 @@
 import React from 'react';
-// import { slide as Menu } from 'react-burger-menu';
+import { slide as Menu } from 'react-burger-menu';
 import { NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { routesPaths } from '../../routes';
-
+import { ReactComponent as USAIcon } from '../../assets/svg/flag-usa.inline.svg';
+import { ReactComponent as SpainIcon } from '../../assets/svg/flag-spain.inline.svg';
+import i18n from '../../i18n';
 // const LANGUAGES = {
 //   english: 'en',
 //   spanish: 'es',
@@ -11,20 +13,28 @@ import { routesPaths } from '../../routes';
 
 const Nav = () => {
   const { t } = useTranslation();
+
+  const changeLanguage = (selectedLanguage) => {
+    i18n.changeLanguage(selectedLanguage);
+  };
   return (
-    <div className="navigation">
-      {/* <Menu right> */}
-      {/*  <Link to="/" className="link">{'home'}</Link> */}
-      {/*  <Link to="/about/" className="link">{'about'}</Link> */}
-      {/*  <Link to="/services/" className="link">{'services'}</Link> */}
-      {/*  <Link to="/trips/" className="link">{'trips and sites'}</Link> */}
-      {/* </Menu> */}
+    <div className="nav">
+      <Menu right>
+        <USAIcon className="flag" onClick={() => changeLanguage('en')} />
+        <SpainIcon className="flag" onClick={() => changeLanguage('es')} />
+        <NavLink to={routesPaths.home} className="link">{t('home')}</NavLink>
+        <NavLink to={routesPaths.about} className="link">{t('about')}</NavLink>
+        <NavLink to={routesPaths.services} className="link">{t('services')}</NavLink>
+        <NavLink to={routesPaths.tripsAndSites} className="link">{t('trips and sites')}</NavLink>
+      </Menu>
       <nav className="navigation">
         <ul>
           <NavLink to={routesPaths.home} className="link">{t('home')}</NavLink>
           <NavLink to={routesPaths.about} className="link">{t('about')}</NavLink>
           <NavLink to={routesPaths.services} className="link">{t('services')}</NavLink>
           <NavLink to={routesPaths.tripsAndSites} className="link">{t('trips and sites')}</NavLink>
+          <USAIcon className="flag" onClick={() => changeLanguage('en')} />
+          <SpainIcon className="flag" onClick={() => changeLanguage('es')} />
         </ul>
       </nav>
     </div>
