@@ -37,7 +37,7 @@
     /* Group B- 600 pixels and above (typically tablet devices) */
     /* Group C- 600 pixels and above when touch is not available (typically desktop or laptop screens) */
 
-    /* Hero or blog post titles */
+    /* HeroSection or blog post titles */
     --font-size-canon-A: 3.2rem;
     --font-size-canon-B: 5.2rem;
     --font-size-canon-C: 4.4rem;

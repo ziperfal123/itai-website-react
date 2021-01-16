@@ -1,25 +1,26 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import Button from '../Button';
 import SocialNetworkIcons from '../SocialNetworkIcons';
 import ItaiPassport from '../../assets/itai-passport.jpeg';
 
-const Hero = () => {
-  console.log('Hero');
+const HeroSection = () => {
+  const { t } = useTranslation();
   return (
     <main className="hero">
       <div className="personal-details">
         <article>
           <div className="text">
             <h1 className="header">
-              hi!
+              {t('hi')}
+              &nbsp;
               <span className="secondary-header">
-                i am Itai
-                .
+                {`${t('i am itai')}.`}
               </span>
             </h1>
-            <h3 className="trinary-header">Freelance tour guide in Israel</h3>
+            <h3 className="trinary-header">{t('freelance tour guide in israel')}</h3>
           </div>
-          <Button>contact me</Button>
+          <Button>{t('contact me')}</Button>
           <SocialNetworkIcons />
         </article>
       </div>
@@ -33,4 +34,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default HeroSection;

@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import Nav from './components/Nav';
-import HeroSection from './components/Hero';
+import HeroSection from './components/HeroSection';
 import AboutSection from './components/AboutSection';
 import ServicesSection from './components/ServicesSection';
 import ReviewsSection from './components/ReviewsSection';
@@ -8,15 +8,17 @@ import ContactSection from './components/ContactSection';
 
 function App() {
   return (
-    <div className="root">
-      <Nav />
-      <HeroSection />
-      <ServicesSection />
-      <AboutSection />
-      {/* <CommonTripsSection /> */}
-      <ReviewsSection />
-      <ContactSection />
-    </div>
+    <Suspense fallback="loading.. :) ">
+      <div className="root">
+        <Nav />
+        <HeroSection />
+        <ServicesSection />
+        <AboutSection />
+        {/* <CommonTripsSection /> */}
+        <ReviewsSection />
+        <ContactSection />
+      </div>
+    </Suspense>
   );
 }
 

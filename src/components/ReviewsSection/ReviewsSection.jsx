@@ -1,18 +1,20 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import ManPassport from '../../assets/man-passport.jpg';
 import WomanPassport from '../../assets/woman-passport.jpg';
 
 const ReviewsSection = () => {
+  const { t } = useTranslation();
   const reviews = [
     {
       image: ManPassport,
       name: 'Alejandro Reyes',
-      text: 'alejandro review text',
+      text: t('alejandro review text'),
     },
     {
       image: WomanPassport,
       name: 'Lisa Wix',
-      text: 'lisa review text',
+      text: t('lisa review text'),
     },
   ];
 

@@ -1,6 +1,6 @@
 @import '../../styles/variables.css';
 /*********************
-        Hero
+        HeroSection
 **********************/
 
 /*********************
@@ -8,15 +8,8 @@
 **********************/
 .hero {
   --main-header-font-size-large: 8rem;
-  --main-header-font-size-medium: calc(
-    var(--main-header-font-size-large) - 10px
-  );
-  --main-header-font-size-small: calc(
-    var(--main-header-font-size-large) - 20px
-  );
 
   --sub-header-font-size-large: 4.5rem;
-  --sub-header-font-size-medium: calc(var(--sub-header-font-size-large) - 5px);
   --sub-header-font-size-small: calc(var(--sub-header-font-size-large) - 10px);
 
   --trinary-header-font-size-large: var(--font-size-great-primer-C);
@@ -78,6 +71,10 @@
   margin-top: 0;
   margin-bottom: 3rem;
 }
+.hero > .personal-details > article > .text > .trinary-header::first-letter {
+  text-transform: uppercase;
+}
+
 
 /*---------------------
     Passport image
@@ -108,10 +105,10 @@
 /* Tablet landscape upper boundry or less */
 @media screen and (max-width: 1200px) {
   .hero > .personal-details > article > .text > .header {
-    font-size: var(--main-header-font-size-medium);
+    font-size: var(--main-header-font-size-large) - 10px;
   }
   .hero > .personal-details > article > .text > .header > .secondary-header {
-    font-size: var(--sub-header-font-size-medium);
+    font-size: calc(var(--sub-header-font-size-large) - 5px);
   }
   .hero > .personal-details > article > .text > .trinary-header {
     font-size: var(--trinary-header-font-size-medium);
@@ -125,7 +122,7 @@
 /* Tablet portrait upper boundry or less */
 @media screen and (max-width: 950px) {
   .hero > .personal-details > article > .text > .header {
-    font-size: var(--main-header-font-size-small);
+    font-size: var(--main-header-font-size-large) - 20px;
   }
   .hero > .personal-details > article > .text > .header > .secondary-header {
     font-size: var(--sub-header-font-size-small);

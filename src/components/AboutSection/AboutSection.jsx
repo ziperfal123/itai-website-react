@@ -1,13 +1,13 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import SectionTitle from '../SectionTitle';
 import PhotosComposition from '../PhotosComposition';
 
 const AboutSection = () => {
-  console.log('AboutSection');
-
+  const { t } = useTranslation();
   return (
     <div className="about-section">
-      <SectionTitle>about title</SectionTitle>
+      <SectionTitle>{t('about title')}</SectionTitle>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur consequuntur cum,
         cupiditate inventore iusto maxime molestiae omnis qui, quia, quis quisquam quo quod rerum
