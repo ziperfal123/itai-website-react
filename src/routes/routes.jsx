@@ -1,16 +1,12 @@
+import React from 'react';
+import { Route, Switch } from 'react-router-dom';
 import HomePage from '../pages/HomePage';
 import ServicesPage from '../pages/ServicesPage';
 import AboutPage from '../pages/AboutPage';
 import TripAndSitesPage from '../pages/TripAndSitesPage';
+import routesPaths from './paths';
 
-export const routesPaths = {
-  home: '/',
-  about: '/about/',
-  services: '/services/',
-  tripsAndSites: '/tripsAndSites/',
-};
-
-export default [
+const routes = [
   {
     path: routesPaths.home,
     exact: true,
@@ -32,3 +28,15 @@ export default [
     component: TripAndSitesPage,
   },
 ];
+
+const AppSwitch = () => (
+  <Switch>
+    {routes.map((route) => (
+      <Route
+        {...route}
+      />
+    ))}
+  </Switch>
+);
+
+export default AppSwitch;
