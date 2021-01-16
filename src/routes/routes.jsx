@@ -1,16 +1,34 @@
-import React from 'react';
+import HomePage from '../pages/HomePage';
+import ServicesPage from '../pages/ServicesPage';
+import AboutPage from '../pages/AboutPage';
+import TripAndSitesPage from '../pages/TripAndSitesPage';
 
-const routes = [
+export const routesPaths = {
+  home: '/',
+  about: '/about/',
+  services: '/services/',
+  tripsAndSites: '/tripsAndSites/',
+};
+
+export default [
   {
-    path: '/',
+    path: routesPaths.home,
     exact: true,
-    component: () => <h1>Root</h1>,
+    component: HomePage,
   },
   {
-    path: '/services/',
+    path: routesPaths.about,
     exact: true,
-    component: () => <h1>Services</h1>,
+    component: AboutPage,
+  },
+  {
+    path: routesPaths.services,
+    exact: true,
+    component: ServicesPage,
+  },
+  {
+    path: routesPaths.tripsAndSites,
+    exact: true,
+    component: TripAndSitesPage,
   },
 ];
-
-export default routes;

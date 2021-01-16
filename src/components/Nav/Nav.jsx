@@ -2,6 +2,7 @@ import React from 'react';
 // import { slide as Menu } from 'react-burger-menu';
 import { NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { routesPaths } from '../../routes';
 
 // const LANGUAGES = {
 //   english: 'en',
@@ -20,10 +21,10 @@ const Nav = () => {
       {/* </Menu> */}
       <nav className="navigation">
         <ul>
-          <NavLink to="/" className="link">{t('home')}</NavLink>
-          <NavLink to="/about/" className="link">{t('about')}</NavLink>
-          <NavLink to="/services/" className="link">{t('services')}</NavLink>
-          <NavLink to="/trips/" className="link">{t('trips and sites')}</NavLink>
+          <NavLink to={routesPaths.home} className="link">{t('home')}</NavLink>
+          <NavLink to={routesPaths.about} className="link">{t('about')}</NavLink>
+          <NavLink to={routesPaths.services} className="link">{t('services')}</NavLink>
+          <NavLink to={routesPaths.tripsAndSites} className="link">{t('trips and sites')}</NavLink>
         </ul>
       </nav>
     </div>

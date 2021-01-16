@@ -1,1 +1,4 @@
-export { default } from './routes';
+import routes, { routesPaths } from './routes';
+
+export { routesPaths };
+export default routes;
