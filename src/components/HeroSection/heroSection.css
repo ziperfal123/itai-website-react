@@ -10,15 +10,10 @@
   --main-header-font-size-large: 8rem;
 
   --sub-header-font-size-large: 4.5rem;
-  --sub-header-font-size-small: calc(var(--sub-header-font-size-large) - 10px);
+  --sub-header-font-size-small: calc(4.5rem - 1rem);
 
   --trinary-header-font-size-large: var(--font-size-great-primer-C);
-  --trinary-header-font-size-medium: calc(
-    var(--trinary-header-font-size-large) - 2px
-  );
-  --trinary-header-font-size-small: calc(
-    var(--trinary-header-font-size-large) - 2px
-  );
+  --trinary-header-font-size-small: calc(var(--font-size-great-primer-C) - 2px)
 }
 
 .hero {
@@ -105,13 +100,13 @@
 /* Tablet landscape upper boundry or less */
 @media screen and (max-width: 1200px) {
   .hero > .personal-details > article > .text > .header {
-    font-size: var(--main-header-font-size-large) - 10px;
+    font-size: calc(7rem)
   }
   .hero > .personal-details > article > .text > .header > .secondary-header {
-    font-size: calc(var(--sub-header-font-size-large) - 5px);
+    font-size: 4rem;
   }
   .hero > .personal-details > article > .text > .trinary-header {
-    font-size: var(--trinary-header-font-size-medium);
+    font-size: calc(var(--font-size-great-primer-C) - 2px);
   }
   .hero > .passport-image {
     height: 270px;
@@ -122,7 +117,7 @@
 /* Tablet portrait upper boundry or less */
 @media screen and (max-width: 950px) {
   .hero > .personal-details > article > .text > .header {
-    font-size: var(--main-header-font-size-large) - 20px;
+    font-size: 6rem;
   }
   .hero > .personal-details > article > .text > .header > .secondary-header {
     font-size: var(--sub-header-font-size-small);
