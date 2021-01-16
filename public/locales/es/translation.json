@@ -6,7 +6,7 @@
   "english": "english",
   "spanish": "spanish",
 
-  "hi": "hi",
+  "hi": "HOLA!",
   "i am itai": "i'm Itai",
   "freelance tour guide in israel": "freelance tour guide in Israel",
 
@@ -25,5 +25,5 @@
   "email": "E-mail",
   "message": "message",
   "address": "Address",
-  "phone": "phone",
+  "phone": "Phone"
 }
