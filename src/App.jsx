@@ -1,23 +1,22 @@
 import React, { Suspense } from 'react';
+import { Route, Switch } from 'react-router-dom';
 import Nav from './components/Nav';
-import HeroSection from './components/HeroSection';
-import AboutSection from './components/AboutSection';
-import ServicesSection from './components/ServicesSection';
-import ReviewsSection from './components/ReviewsSection';
-import ContactSection from './components/ContactSection';
+// import HomePage from './pages/HomePage';
+// import routes from './routes';
 
 function App() {
   return (
     <Suspense fallback="loading.. :) ">
-      <div className="root">
-        <Nav />
-        <HeroSection />
-        <ServicesSection />
-        <AboutSection />
-        {/* <CommonTripsSection /> */}
-        <ReviewsSection />
-        <ContactSection />
-      </div>
+      <Nav />
+      <Switch>
+        <Route exact path="/" component={() => <h1>HomePAge</h1>} />
+        <Route path="/services" component={() => <h1>Services</h1>} />
+        {/* {routes.map((route) => ( */}
+        {/*  <Route */}
+        {/*    {...route} */}
+        {/*  /> */}
+        {/* ))} */}
+      </Switch>
     </Suspense>
   );
 }

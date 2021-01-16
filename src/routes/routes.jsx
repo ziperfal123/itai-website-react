@@ -1,7 +1,15 @@
+import React from 'react';
+
 const routes = [
   {
-    path: './',
-    component: () => <h1>Hello world</h1>,
+    path: '/',
+    exact: true,
+    component: () => <h1>Root</h1>,
+  },
+  {
+    path: '/services/',
+    exact: true,
+    component: () => <h1>Services</h1>,
   },
 ];
 
