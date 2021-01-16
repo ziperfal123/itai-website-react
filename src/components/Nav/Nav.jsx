@@ -24,13 +24,36 @@ const Nav = () => {
 
   return (
     <div className="nav">
-      <Menu right>
+      <Menu
+        right
+        width={280}
+      >
         <USAIcon className="flag" onClick={() => changeLanguage(LANGUAGES.english)} />
         <SpainIcon className="flag" onClick={() => changeLanguage(LANGUAGES.spanish)} />
-        <NavLink to={routesPaths.home} className="link">{t('home')}</NavLink>
-        <NavLink to={routesPaths.about} className="link">{t('about')}</NavLink>
-        <NavLink to={routesPaths.services} className="link">{t('services')}</NavLink>
-        <NavLink to={routesPaths.tripsAndSites} className="link">{t('trips and sites')}</NavLink>
+        <NavLink
+          to={routesPaths.home}
+          className="link"
+        >
+          {t('home')}
+        </NavLink>
+        <NavLink
+          to={routesPaths.about}
+          className="link"
+        >
+          {t('about')}
+        </NavLink>
+        <NavLink
+          to={routesPaths.services}
+          className="link"
+        >
+          {t('services')}
+        </NavLink>
+        <NavLink
+          to={routesPaths.tripsAndSites}
+          className="link"
+        >
+          {t('trips and sites')}
+        </NavLink>
       </Menu>
       <nav className="navigation">
         <ul>
