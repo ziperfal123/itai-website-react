@@ -3,10 +3,29 @@
 /*********************
         Footer
 **********************/
+/*********************
+      Variables
+**********************/
+.footer {
+    --footer-height: 6rem;
+}
+
+
 footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    height: 60px;
+    height: var(--footer-height);
     background: var(--color-primary-1);
     position: fixed;
     bottom: 0
 }
+
+footer > ul.social-network-icons {
+    width: auto;
+    position: relative;
+    top: calc(var(--footer-height) / 2);
+    transform: translateY(-50%);
+}
+

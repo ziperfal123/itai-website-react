@@ -1,12 +1,13 @@
 import React from 'react';
+import SocialNetworkIcons from '../SocialNetworkIcons';
 
 const Footer = () => {
   console.log('Footer');
-  return <footer className="footer">{/* <h1>Footer</h1> */}</footer>;
+  return (
+    <footer className="footer">
+      <SocialNetworkIcons />
+    </footer>
+  );
 };
 
 export default Footer;
-
-Footer.propTypes = {};
-
-Footer.defaultProps = {};
