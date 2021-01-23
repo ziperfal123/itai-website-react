@@ -3,13 +3,43 @@
 /*********************
       About Page
 **********************/
-.page.about {
-    width: 100vw;
-    height: calc(100vh - 80px);
-    background: lightblue;
+.about.page {
+    width: 100%;
+    min-height: calc(100vh - 80px - 60px);
+    background-color: var(--color-primary-3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+/*--------------------------
+  Space for navigation menu
+---------------------------*/
 .header-space {
     height: 80px;
     width: 100%;
 }
+
+/*---------------------
+    Passport image
+----------------------*/
+.about.page > .passport-image {
+    height: 340px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.about.page p {
+    margin-left: 50px;
+    color: var(--text-color-dark-2);
+    line-height: 1.8;
+    font-size: var(--font-size-great-primer-C);
+    width: 40%;
+    /*background: red;*/
+    /*position: absolute;*/
+    /*top: 50%;*/
+    /*left: 45%;*/
+    /*transform: translateY(-50%);*/
+}
+
+
