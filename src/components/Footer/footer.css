@@ -7,7 +7,7 @@
       Variables
 **********************/
 .footer {
-    --footer-height: 6rem;
+    --footer-height: 6.5rem;
 }
 
 
@@ -26,6 +26,6 @@ footer > ul.social-network-icons {
     width: auto;
     position: relative;
     top: calc(var(--footer-height) / 2);
-    transform: translateY(-50%);
+    transform: translateY(-55%);
 }
 
