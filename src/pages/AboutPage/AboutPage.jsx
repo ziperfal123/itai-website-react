@@ -1,10 +1,11 @@
 import React from 'react';
+import HeaderSpace from '../../components/HeaderSpace';
 import ItaiPassport from '../../assets/itai-passport.jpeg';
 import Footer from '../../components/Footer';
 
 const AboutPage = () => (
   <>
-    <div className="header-space" />
+    <HeaderSpace />
     <div className="about page">
       <img
         className="passport-image"

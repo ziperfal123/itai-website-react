@@ -2,6 +2,7 @@ import React from 'react';
 import './servicesPage.css';
 import Jerusalem from '../../assets/jerusalem.jpg';
 import Footer from '../../components/Footer';
+import HeaderSpace from '../../components/HeaderSpace';
 
 const data = [
   {
@@ -58,7 +59,7 @@ const renderItem = ({ image, header, text }) => (
 
 const ServicesPage = () => (
   <>
-    <div className="header-space" />
+    <HeaderSpace />
     <div className="services page">
       {data.map(renderItem)}
     </div>

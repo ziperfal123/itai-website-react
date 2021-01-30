@@ -10,14 +10,6 @@
     background-color: var(--color-primary-3);
 }
 
-/*--------------------------
-  Space for navigation menu
----------------------------*/
-.header-space {
-    height: 80px;
-    width: 100%;
-}
-
 /*---------------------
         Item
 ----------------------*/
