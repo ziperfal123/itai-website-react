@@ -5,3 +5,9 @@
     height: 74px;
     width: 100%;
 }
+
+@media screen and (max-width: 950px) {
+    .header-space {
+        display: none;
+    }
+}

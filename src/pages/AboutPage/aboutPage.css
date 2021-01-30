@@ -5,7 +5,7 @@
 **********************/
 .about.page {
     width: 100%;
-    min-height: calc(100vh - 80px - 60px);
+    min-height: calc(100vh - 8rem - 6rem);
     background-color: var(--color-primary-3);
     display: flex;
     justify-content: center;
@@ -16,7 +16,7 @@
     Passport image
 ----------------------*/
 .about.page > .passport-image {
-    height: 340px;
+    height: 34rem;
     border-radius: 50%;
     position: relative;
 }
@@ -29,4 +29,36 @@
     width: 40%;
 }
 
+
+/*---------------------
+    Media queries
+----------------------*/
+/* Tablet landscape upper boundry or less */
+@media screen and (max-width: 1200px) {
+    .about.page > .passport-image {
+        height: 270px;
+    }
+}
+
+/* Tablet portrait upper boundry or less */
+@media screen and (max-width: 950px) {
+    .about.page {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about.page > .passport-image {
+        margin-top: 6rem;
+    }
+
+    .about.page p {
+        margin-top: 6rem;
+        font-size: var(--font-size-great-primer-A);
+        width: 78%;
+    }
+
+
+}
 
