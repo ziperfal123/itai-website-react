@@ -1,0 +1,69 @@
+@import '../../styles/variables.css';
+
+/*********************
+      Services Page
+**********************/
+.services.page {
+    width: 100%;
+    padding-bottom: 50px;
+    min-height: calc(100vh - 80px - 60px);
+    background-color: var(--color-primary-3);
+}
+
+/*--------------------------
+  Space for navigation menu
+---------------------------*/
+.header-space {
+    height: 80px;
+    width: 100%;
+}
+
+/*---------------------
+        Item
+----------------------*/
+.services.page > .item:first-of-type {
+    padding-top: 50px;
+}
+
+.services.page > .item {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.services.page > .item:not(:first-of-type) {
+    margin-top: 100px;
+}
+/* Every second item */
+.services.page > .item:nth-child(2n) {
+    flex-direction: row-reverse;
+}
+.services.page > .item:nth-child(2n) > .text > .item-header {
+    width: auto;
+}
+
+/*---------------------
+      Item header
+----------------------*/
+.services.page > .item > .text > .item-header {
+    width: 400px;
+    line-height: 1.2;
+    font-size: 80px;
+}
+/*---------------------
+      Item text
+----------------------*/
+.services.page > .item > .text > p {
+    width: 650px;
+    font-size: var(--font-size-pica-C);
+}
+
+/*---------------------
+        Image
+----------------------*/
+.services.page > .item >  img {
+    height: 300px;
+}
+

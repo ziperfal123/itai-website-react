@@ -30,7 +30,6 @@ const PhotosCompostion = () => {
         onMouseLeave={onMouseLeave}
         alt="itai and people traveling in Israel 1"
         src={Itai1}
-
       />
       <img
         className={classnames('photo photo-2', { hovered: hoveredImage === IMAGES.right })}

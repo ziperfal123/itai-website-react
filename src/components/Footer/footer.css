@@ -18,7 +18,7 @@ footer {
     width: 100%;
     height: var(--footer-height);
     background: var(--color-primary-1);
-    position: fixed;
+    position: sticky;
     bottom: 0
 }
 
