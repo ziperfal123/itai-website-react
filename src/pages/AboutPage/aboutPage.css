@@ -22,7 +22,7 @@
 }
 
 .about.page p {
-    margin-left: 50px;
+    margin-left: 5rem;
     color: var(--text-color-dark-2);
     line-height: 1.8;
     font-size: var(--font-size-great-primer-C);
@@ -36,7 +36,7 @@
 /* Tablet landscape upper boundry or less */
 @media screen and (max-width: 1200px) {
     .about.page > .passport-image {
-        height: 270px;
+        height: 27rem;
     }
 }
 
