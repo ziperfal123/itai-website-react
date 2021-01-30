@@ -5,7 +5,7 @@
 **********************/
 .services.page {
     width: 100%;
-    padding-bottom: 50px;
+    padding-bottom: 5rem;
     min-height: calc(100vh - 80px - 60px);
     background-color: var(--color-primary-3);
 }
@@ -14,7 +14,7 @@
         Item
 ----------------------*/
 .services.page > .item:first-of-type {
-    padding-top: 50px;
+    padding-top: 5rem;
 }
 
 .services.page > .item {
@@ -26,7 +26,7 @@
 }
 
 .services.page > .item:not(:first-of-type) {
-    margin-top: 100px;
+    margin-top: 10rem;
 }
 /* Every second item */
 .services.page > .item:nth-child(2n) {
@@ -40,15 +40,17 @@
       Item header
 ----------------------*/
 .services.page > .item > .text > .item-header {
-    width: 400px;
+    text-transform: capitalize;
+    width: 55rem;
+    margin-bottom: 2rem;
     line-height: 1.2;
-    font-size: 80px;
+    font-size: 8rem;
 }
 /*---------------------
       Item text
 ----------------------*/
 .services.page > .item > .text > p {
-    width: 650px;
+    width: 65rem;
     font-size: var(--font-size-pica-C);
 }
 
@@ -56,6 +58,6 @@
         Image
 ----------------------*/
 .services.page > .item >  img {
-    height: 300px;
+    height: 30rem;
 }
 

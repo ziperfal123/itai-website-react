@@ -9,8 +9,8 @@ const itemsData = [
         src={Jerusalem}
       />
     ),
-    header: 'Old city of jerusalem',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim',
+    header: 'old city of jerusalem title',
+    text: 'old city of jerusalem text',
   },
   {
     image: () => (
@@ -19,8 +19,8 @@ const itemsData = [
         src={Jerusalem}
       />
     ),
-    header: 'Christianity History',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim',
+    header: 'christianity history title',
+    text: 'christianity history text',
   },
   {
     image: () => (
@@ -29,8 +29,8 @@ const itemsData = [
         src={Jerusalem}
       />
     ),
-    header: 'Old city of jerusalem',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim',
+    header: 'meet the desert title',
+    text: 'meet the desert text',
   },
   {
     image: () => (
@@ -39,8 +39,8 @@ const itemsData = [
         src={Jerusalem}
       />
     ),
-    header: 'Christianity History',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim',
+    header: 'old city of jerusalem title',
+    text: 'old city of jerusalem text',
   },
 ];
 

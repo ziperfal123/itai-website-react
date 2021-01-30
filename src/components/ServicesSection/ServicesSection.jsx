@@ -12,35 +12,33 @@ const ServicesSection = () => {
       <div className="services-container">
         <ServiceCard
           iconName="jesusIcon"
-          title={t('Christianity history')}
+          title={t('christianity history title')}
           text={t('christianity history text')}
         />
         <ServiceCard
           iconName="camelIcon"
-          title={t('meet the desert')}
-          text={t('desert text')}
+          title={t('meet the desert title')}
+          text={t('meet the desert text')}
         />
-
         <ServiceCard
           iconName="templeIcon"
-          title={t('old city of jerusalem')}
-          text={t('old city text')}
+          title={t('old city of jerusalem title')}
+          text={t('old city of jerusalem text')}
         />
         <ServiceCard
           iconName="jesusIcon"
-          title={t('Christianity history')}
+          title={t('christianity history title')}
           text={t('christianity history text')}
         />
         <ServiceCard
           iconName="camelIcon"
-          title={t('meet the desert')}
-          text={t('desert text')}
+          title={t('meet the desert title')}
+          text={t('meet the desert text')}
         />
-
         <ServiceCard
           iconName="templeIcon"
-          title={t('old city of jerusalem')}
-          text={t('old city text')}
+          title={t('old city of jerusalem title')}
+          text={t('old city of jerusalem text')}
         />
       </div>
     </section>
