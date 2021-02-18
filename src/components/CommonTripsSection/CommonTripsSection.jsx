@@ -1,17 +1,18 @@
 import React from 'react';
-import { withTrans } from '../../i18n/withTrans';
+import { useTranslation } from 'react-i18next';
 import SectionTitle from '../SectionTitle';
 import Carousel from '../Carousel';
 
-const CommonTripsSection = ({ t }) => {
+const CommonTripsSection = () => {
+  const { t } = useTranslation();
   console.log('CommonTripsSection');
 
   return (
     <div className="common-trips-section">
-      <SectionTitle type="light">{t('about title')}</SectionTitle>
+      <SectionTitle type="light">{t('common trips title')}</SectionTitle>
       <Carousel />
     </div>
   );
 };
 
-export default withTrans(CommonTripsSection);
+export default CommonTripsSection;

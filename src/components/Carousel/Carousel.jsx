@@ -1,15 +1,17 @@
 import React from 'react';
-import { withTrans } from '../../i18n/withTrans';
-import SideNav from './components/SideNav';
+import { useTranslation } from 'react-i18next';
+// import SideNav from './components/SideNav';
 
-const Carousel = ({ t }) => {
+const Carousel = () => {
+  const { t } = useTranslation();
+  console.log('t: ', t);
   console.log('Carousel');
 
   return (
     <div className="carousel">
-      <SideNav />
+      {/* <SideNav /> */}
     </div>
   );
 };
 
-export default withTrans(Carousel);
+export default Carousel;
