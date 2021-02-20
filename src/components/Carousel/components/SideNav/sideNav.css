@@ -1,8 +1,0 @@
-/* Vertical line*/
-.carousel > .vertical-line {
-  position: relative;
-  left: 100px;
-  width: 10px;
-  height: 400px;
-  background: blue;
-}

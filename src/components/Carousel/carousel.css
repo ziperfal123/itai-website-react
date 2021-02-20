@@ -5,11 +5,19 @@
 /*---------------------
         Variables
 -----------------------*/
-.carousel {
-}
+.carousel {}
 
 .carousel {
-  background-color: var(--color-primary-1);
-  width: var(--page-section-width);
-  height: 100vh;
+  display: flex;
+  width: 80%;
+  height: 70%;
+  /*left: 50%;*/
+  /*transform: translateX(-50%);*/
+}
+
+/* Side nav */
+.carousel > .side-nav {
+  background: gray;
+  height: 100%;
+  width: 1px;
 }

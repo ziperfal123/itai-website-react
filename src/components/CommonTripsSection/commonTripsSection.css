@@ -12,4 +12,7 @@
   background-color: var(--color-primary-1);
   width: var(--page-section-width);
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
