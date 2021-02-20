@@ -11,8 +11,6 @@
   display: flex;
   width: 80%;
   height: 70%;
-  /*left: 50%;*/
-  /*transform: translateX(-50%);*/
 }
 
 /* Side nav */
@@ -20,28 +18,38 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  background: gray;
   height: 100%;
-  width: 1px;
+  width: auto;
+  border-left: 1px solid gray;
 }
 /*-- Items --*/
 .carousel > .side-nav > li {
-  display: flex;
-  align-items: center;
-  list-style: none;
   position: relative;
   left: -5px;
-  width: fit-content;
-  height: 30px;
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  list-style: none;
+  font-size: var(--font-size-great-primer-C);
+  font-weight: lighter;
+  color: var(--text-color-light);
+  text-transform: capitalize;
+  letter-spacing: 1.5px;
+  cursor: pointer;
 }
-
 .carousel > .side-nav > li::before {
+  margin-right: 7px;
   content: "";
   display: inline-block;
   width: 10px;
   height: 10px;
   border-radius: 100%;
-  background: red;
+  background: var(--text-color-dark-2);
   flex-shrink: 0;
 }
 
+/*-- Selected --*/
+.carousel > .side-nav > li.selected {
+  font-size: var(--font-size-trafalgar-C);
+
+}

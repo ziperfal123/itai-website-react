@@ -13,7 +13,6 @@
     /* Dark */
     --color-primary-dark-1: hsl(229, 13%, 25%);
     --color-primary-dark-2: hsl(194, 87%, 40%);
-
     /* Heading colors */
     /* -- Dark -- */
     --heading-color-dark-1: hsl(0, 0%, 20%);
@@ -33,9 +32,9 @@
     /*--------------------
         Typography
   ----------------------*/
-    /* Group A- Default sizing 0-599 pxs (typically smart phones) */
-    /* Group B- 600 pixels and above (typically tablet devices) */
-    /* Group C- 600 pixels and above when touch is not available (typically desktop or laptop screens) */
+    /* Group A- Default screen size 0-599 pxs (typically smart phones) */
+    /* Group B- Screen size 600 pixels and above (typically tablet devices) */
+    /* Group C- Screen size 600 pixels and above when touch is not available (typically desktop or laptop screens) */
 
     /* HeroSection or blog post titles */
     --font-size-canon-A: 3.2rem;
