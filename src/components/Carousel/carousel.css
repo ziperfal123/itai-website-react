@@ -17,7 +17,31 @@
 
 /* Side nav */
 .carousel > .side-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   background: gray;
   height: 100%;
   width: 1px;
 }
+/*-- Items --*/
+.carousel > .side-nav > li {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  position: relative;
+  left: -5px;
+  width: fit-content;
+  height: 30px;
+}
+
+.carousel > .side-nav > li::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background: red;
+  flex-shrink: 0;
+}
+
