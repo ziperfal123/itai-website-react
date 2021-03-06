@@ -1,16 +1,15 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-const itemsText = ['nazeret', 'death sea', 'jerusalem', 'haifa', 'eilat'];
-
-const SideNav = () => {
+// eslint-disable-next-line react/prop-types
+const SideNav = ({ items = [], selectedItemIndex, onItemClick }) => {
   console.log('SideNav');
-  const [selectedItem, setSelectedItem] = useState((itemsText.length - 1) / 2);
-  console.log('setSelectedItem: ', setSelectedItem);
   const renderItem = (textToDisplay, index) => (
+    // eslint-disable-next-line max-len
+    // eslint-disable-next-line jsx-a11y/click-events-have-key-events,jsx-a11y/no-noninteractive-element-interactions
     <li
-      className={index === selectedItem && 'selected'}
+      className={index === selectedItemIndex && 'selected'}
       key={textToDisplay}
-
+      onClick={() => onItemClick(index)}
     >
       {textToDisplay}
     </li>
@@ -18,7 +17,7 @@ const SideNav = () => {
 
   return (
     <ul className="side-nav">
-      {itemsText.map(renderItem)}
+      {items.map(renderItem)}
     </ul>
   );
 };
